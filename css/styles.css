@@ -129,12 +129,12 @@ body{
 }
 
 .loader{
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1d1d1d;
@@ -154,7 +154,11 @@ body{
     border: 15px solid #ffffff;
     border-top-color: #1946BA;
     border-radius: 50%;
-    animation: loading 0.75s ease infinite;
+    animation: loading 0.75s ease infinite; 
+}
+
+.loader img{
+    width: 60%;
 }
 
 @keyframes loading{
@@ -288,14 +292,14 @@ body{
     color: #Fff;
 }
 
-.main-services-container h1{
+.service-title{
     font-size: 80px;
     margin-top: 100px;
     margin-bottom: 80px;
-    margin-left: 150px;
+    margin-left: 5vw;
 }
 
-.main-services-container h2{
+.service-sub{
     font-size: 20px;
     margin-top: 20px;
     margin-left: 60vw;
@@ -1064,6 +1068,7 @@ main {
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding-top: 20px;
 }
 
   .bg {
@@ -1464,7 +1469,7 @@ main {
     padding: 150px 100px;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:960px) {
 
     .navbar{
         background: transparent;
@@ -1474,6 +1479,11 @@ main {
         z-index: 1000;
         overflow: visible;
         box-shadow: none;   
+        transition: 0.5s;
+    }
+
+    .navbar a{
+        display: none;
     }
   
     .m{
@@ -1482,13 +1492,12 @@ main {
 
     .navbarMenu {
         position: fixed;
-        display: flex;
+        display: grid;
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
         opacity: 1;
-        transition: all 0.5s;
+        transition: ease-out 0.5s;
         z-index: -1;
     }
 
@@ -1506,6 +1515,7 @@ main {
 
     .navbarMenu.active {
         background: #1d1d1d;
+        display: grid;
         top: 100%;
         width: 100%;
         opacity: 1;
@@ -1513,11 +1523,15 @@ main {
         z-index: 1000;
         height: 100vh;
         font-size: 1.6rem;
-        justify-content: center;
         align-items: center;
+        text-align: center;
         opacity: 96%;
-        margin-top: -61px;
         z-index: -1;
+    }
+
+    .navbarMenu.active a{
+        display: grid;
+        margin-bottom: 0;
     }
 
     .navbarItem {
@@ -1644,18 +1658,17 @@ main {
         border-bottom: solid 10px #fff; 
     }
 
-    .main-services-container h1{
+    .service-title{
         font-size: 40px;
         margin-top: 50px;
         margin-bottom: 80px;
-        margin-left: 20px;
-        width: 350px;
+        margin-left: 10vw;
+        width: 400px;
     }
 
-    .main-services-container h2{
+    .service-sub {
         text-align: end;
-        margin-left: 140px;
-        margin-right: 20px;
+        margin-right: 100vw;
         width: 250px;
         margin-top: -50px;
     }
@@ -1708,13 +1721,13 @@ main {
     .infoCard h2{
         font-size: 20px;
         margin-top: 40px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
     
     .infoCard p{
         font-size: 13px;
         margin-top: 85px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     
     .infoCard img{
@@ -1736,13 +1749,13 @@ main {
     .infoCard2 h2{
         font-size: 20px;
         margin-top: 40px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
     
     .infoCard2 p{
         font-size: 13px;
         margin-top: 85px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     
     .infoCard2 img{
@@ -1920,6 +1933,10 @@ main {
         text-align: center;
     }
 
+    .aboutContact2{
+        text-align: center;
+    }
+
     .navbar-bottom{
         display:none;
         margin-left: 0px;
@@ -1963,6 +1980,26 @@ main {
     }
     
 }
+
+@media screen and (max-width:650px) {
+
+    .service-sub {
+        text-align: end;
+        margin-right: 0vw;
+        margin-left: 30%;
+        width: 250px;
+        margin-top: -50px;
+    }
+
+    .service-title{
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        margin-left: 10vw;
+        width: 300px;
+    }
+}
+
 
 @media screen and (max-width:1300px) {
     .banner-container {
