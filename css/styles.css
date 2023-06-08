@@ -42,7 +42,7 @@ body{
     color: #FFFFFF;
     background-color: #000;
     margin-top: -100px;
-    height: 40px;
+    height: 60px;
 }
 
 #cursor {
@@ -64,10 +64,10 @@ body{
 .navbar{
     position: fixed;   
     font-size: 1.2rem;
-    height: 50px;
+    height: 100px;
     width: 100%;
     left: 0;
-    background: #1b1b1b;
+    background: transparent;
     overflow: hidden;
     z-index: 1000;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -77,27 +77,29 @@ body{
 .navbarMenu{
     text-align: end;
     margin-right: 100px;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .navbar a{
     color: #dfdfdf;
+    text-transform: uppercase; 
 }
 
 .navbarMenu a{
+    margin-top: 50px;
     justify-content: center;
 }
 
 .navbarMenu img{
     position: absolute;
-    height: 40px;
-    margin-top: -10px;
-    margin-left: -30%;
+    height: 160px;
+    margin-top: -70px;
+    margin-left: -80vh;
 }
 
 .nav-container a{
     color: #ffffff;
-    font-size: 14px;
+    font-size: 15px;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -151,8 +153,8 @@ body{
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #ffffff;
-    border-top-color: #1946BA;
+    border: 15px solid #d1d1d1;
+    border-top-color: #B37D4B;
     border-radius: 50%;
     animation: loading 0.75s ease infinite; 
 }
@@ -194,9 +196,8 @@ body{
     flex-direction: column;
     margin: 0 auto;
     text-align:center;
-    padding: 100px;
+    padding: 10px;
     color:#fdfdfd;
-    height: 650px;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./Src/Obras/Muller/muller_fachada.jpg);
     background-size: cover;
     height: 100vh;
@@ -217,7 +218,6 @@ body{
     flex-direction: column;
     margin: 0 auto;
     text-align:center;
-    padding: 100px;
     color:#fdfdfd;
     background-size: cover;
     height: 100vh;
@@ -983,7 +983,6 @@ body{
     justify-content: center;
     text-align: start;
     color: #000;
-    height: 2400px;
     margin-bottom: 100px;
     background-color: #Fff;
 }
@@ -1010,7 +1009,7 @@ body{
     position: absolute;
     justify-self: end;
     margin-left: 55%;
-    margin-top: 15vh;
+    margin-top: -125%;
 }
 
 .obraInfo h4{
@@ -1033,22 +1032,17 @@ body{
 
 .obraImg img{
     margin-bottom: 20px;
+    width: 80vw;
 }
 
-.obraImgEssex{
-    margin-left: 5vw;
-    margin-top: 100px;
+.logoObra{
+    margin-top: 30vh;
+    width: 20vw;
 }
 
-.obraImgEssex img{
-    margin-bottom: 20px;
-    width: 600px;
-    margin-right: 20px;
-}
-
-.main-content img{
-    margin-top: 150px;
+.seta-baixo img{
     width: 40px;
+    margin-top: 200px;
 }
 
 /* Home */
@@ -1068,7 +1062,7 @@ main {
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
   .bg {
@@ -1423,6 +1417,14 @@ main {
 
 }
 
+.client-area3{
+    padding: 0px 0px 0px 0px;
+    background-color: #000; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
 .slick-slide{
     margin: 0 0px;
     margin-left: 50px;
@@ -1499,6 +1501,13 @@ main {
         opacity: 1;
         transition: ease-out 0.5s;
         z-index: -1;
+    }
+
+    .navbarMenu img{
+        position: relative;
+        height: 120px;
+        margin-top: -40px;
+        margin-left: 0vh;
     }
 
     #navbarLogo {
@@ -1684,17 +1693,21 @@ main {
     .assistenceWrapper2{
         flex-wrap: wrap;
         display: flex;
-        justify-content: end;  
+        justify-content: start;  
         margin-bottom: 100px;
         border-radius: 20px;
     }    
+
+    .assistenceWrapper3{
+        justify-content: start;  
+    }
 
     .assistenceCard{
         height: 35vh;
         width: 90vw;
         padding: 3rem 2rem 2.5rem;
         margin: 100px;
-        margin-left: 5vw;
+        margin-left: 2vw;
         margin-right: 5vw;
         margin-bottom: -100px;
     }
@@ -1702,9 +1715,9 @@ main {
     .assistenceCard2{
         height: 35vh;
         width: 90vw;
-        transition: 0.3s ease-in;
+        padding: 3rem 2rem 2.5rem;
         margin: 100px;
-        margin-left: 5vw;
+        margin-left: 2vw;
         margin-right: 5vw;
         margin-bottom: -100px;
     }
@@ -1713,7 +1726,7 @@ main {
         width: 340px;
         height: 190px;
         background-color: #000;
-        margin-left: 4vw;
+        margin-left: 0vw;
         margin-top: 100px;
         text-align: left;
     }
@@ -1741,7 +1754,7 @@ main {
         width: 340px;
         height: 190px;
         background-color: #000;
-        margin-left: 4vw;
+        margin-left: 0vw;
         margin-top: 100px;
         text-align: left;
     }
@@ -1781,8 +1794,13 @@ main {
     }
 
     .obraInfo{
-        margin-left: 5%;
-        margin-top: 1300px;
+        position: relative;
+        text-align: start;
+        justify-self: center;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 50px;
+        padding-bottom: 20px;
     }
 
     .aboutContainer-obra{
@@ -1790,7 +1808,6 @@ main {
         justify-content: center;
         text-align: start;
         color: #000;
-        height: 2400px;
         margin-bottom: 0px;
         background-color: #Fff;
         
@@ -1799,7 +1816,7 @@ main {
     .aboutContainer-obra h1{
         margin-bottom: 20px;
         font-size: 40px;
-        padding-top: 80px;
+        padding-top: 40px;
         color: #06181B;
         margin-left: 5%;
     }
@@ -1977,6 +1994,30 @@ main {
         height: 60px;
         margin-top: -100px;
         font-size: 14px;
+    }
+
+    .main-container-obra{
+        background-position-x: -100px;
+    }
+
+    .obraImg {
+        margin-top: 50px;
+        margin-left: 4vw;
+    }
+
+    .obraImg img{
+        width: 90vw;
+        margin-left: 0px;
+    }
+
+    .logoObra{
+        margin-top: 25vh;
+        width: 300px;
+    }
+    
+    .seta-baixo img{
+        width: 40px;
+        margin-top: 200px;
     }
     
 }
