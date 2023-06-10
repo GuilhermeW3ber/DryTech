@@ -259,14 +259,14 @@ body{
 
 .assistenceWrapper{
     flex-wrap: wrap;
-    display: flex;
+    display: grid;
     justify-content: start;  
     margin-bottom: 100px;
     border-radius: 20px;
 }
 
 .assistenceWrapper2{
-    flex-wrap: wrap;
+    flex-wrap: grid;
     display: flex;
     justify-content: end;  
     margin-bottom: 100px;
@@ -880,6 +880,7 @@ body{
     position: absolute;
     margin-left: -50%;
     width: 200px;
+    margin-top: -500px;
 }
 
 .aboutContainer h1{
@@ -893,6 +894,8 @@ body{
     margin-bottom: 20px;
     font-size: 30px;
     color: #ffffff;
+    width: 100vw;
+
 }
 
 .aboutContainer h3{
@@ -907,7 +910,7 @@ body{
 
 .aboutContainer h4{
     margin-bottom: 20px;
-    width: 20vw;
+    width: 100vw;
     margin-top: 40px;
     /* color: #414041; */
     color: #ffffff;
@@ -920,6 +923,7 @@ body{
     color: #ffffff;
     text-align: center;
     font-weight: 200;
+    margin: 20px;
 }
 
 .markWrapper{
@@ -1580,8 +1584,8 @@ main {
     }
 
     .whats img{
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         margin: 10px;
         margin-bottom: 5px;
     }
@@ -1618,19 +1622,20 @@ main {
     }
 
     .aboutContainer{
-        display:grid;
+        display:flex;
         margin-left: 0vw;
         justify-content: center;
         text-align: center;
         margin-top: 50px;
-        margin-bottom: 400px;
+        margin-bottom: 50px;
     }
 
     .aboutContainer img{
-        position: absolute;
-        margin-left: 25%;
+        position: relative;
+        margin-left: 50vw;
+        margin-right: 50vw;
         width: 50vw;
-        margin-top: 530px;
+        margin-top: 50px;
     }
 
     .aboutContainer h3{
@@ -1640,8 +1645,6 @@ main {
 
     .about-end h3{
         color: #ffffff;
-        text-align: center;
-        justify-content: center;
         font-weight: 200;
     }
 
@@ -1708,6 +1711,7 @@ main {
         padding: 3rem 2rem 2.5rem;
         margin: 100px;
         margin-left: 2vw;
+        margin-right: 5vw;
         margin-bottom: -100px;
     }
 
@@ -1725,7 +1729,7 @@ main {
         width: 340px;
         height: 190px;
         background-color: #000;
-        margin-left: 0vw;
+        margin-left: 2rem;
         margin-top: 100px;
         text-align: left;
     }
@@ -1753,7 +1757,7 @@ main {
         width: 340px;
         height: 190px;
         background-color: #000;
-        margin-left: 0vw;
+        margin-left: 2rem;
         margin-top: 100px;
         text-align: left;
     }
@@ -2050,6 +2054,18 @@ main {
 @media screen and (max-width:768px) {
     .banner-container {
         grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (max-width:413px) {
+
+    .infoCard{
+        margin-left: 1vw;
+    }
+
+    .infoCard2{
+        margin-left: 1vw;
     }
     
 }
