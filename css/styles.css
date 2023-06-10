@@ -976,7 +976,7 @@ body{
 }
 
 .bodyInfo{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./Src/PALACIO-BAROLO-VISTAjpg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Src/Obras/Baltoro/Baltoro_Home.jpg);;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
