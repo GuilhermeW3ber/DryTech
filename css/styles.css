@@ -1726,7 +1726,6 @@ main {
     }
 
     .infoCard{
-        
         width: 330px;
         height: 190px;
         background-color: #000;
@@ -1755,10 +1754,10 @@ main {
     }
 
     .infoCard2{
-        width: 340px;
+        width: 330px;
         height: 190px;
         background-color: #000;
-        margin-left: 2rem;
+        margin-left: 0rem;
         margin-top: 100px;
         text-align: left;
     }
@@ -2042,7 +2041,7 @@ main {
         font-size: 30px;
         margin-top: 50px;
         margin-bottom: 80px;
-        margin-left: 10vw;
+        margin-left: 0vw;
         width: 300px;
     }
 }
