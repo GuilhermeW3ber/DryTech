@@ -1509,9 +1509,9 @@ main {
     }
 
     .navbarMenu img{
-        position: absolute;
+        position: relative;
         height: 100px;
-        margin-top: -25vh;
+        margin-top: -20vh;
         margin-left: -50vw;
     }
 
