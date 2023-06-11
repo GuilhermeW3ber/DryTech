@@ -1509,10 +1509,10 @@ main {
     }
 
     .navbarMenu img{
-        position: relative;
-        height: 120px;
-        margin-top: -40px;
-        margin-left: 0vh;
+        position: absolute;
+        height: 100px;
+        margin-top: -25vh;
+        margin-left: -50vw;
     }
 
     #navbarLogo {
