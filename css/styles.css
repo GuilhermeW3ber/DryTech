@@ -1006,7 +1006,7 @@ body{
 
 .aboutContainer-obra{
     margin-top: 40px;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     color: #000;
     margin-bottom: 100px;
