@@ -1074,6 +1074,16 @@ body{
     margin-top: 200px;
 }
 
+.AcecoLogo{
+    background-image: url(../src/Icones/Brancos/AcecoBranco.png);
+    background-position: 100%;
+    background-size: 150px;
+    height: 100px;
+    background-repeat: no-repeat;
+   
+    
+}
+
 /* Home */
 
 main {
